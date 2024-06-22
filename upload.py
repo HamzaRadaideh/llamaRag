@@ -38,7 +38,7 @@ def convert_pdf_to_text():
             with open("vault.txt", "a", encoding="utf-8") as vault_file:
                 for chunk in chunks:
                     # Write each chunk to its own line
-                    vault_file.write(chunk.strip() + "\n")  # Two newlines to separate chunks
+                    vault_file.write(chunk.strip() + "\n")  # Two newlines to separate cShunks
             print(f"PDF content appended to vault.txt with each chunk on a separate line.")
 
 # Function to upload a text file and append to vault.txt
