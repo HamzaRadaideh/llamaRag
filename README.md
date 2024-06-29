@@ -1,6 +1,6 @@
 ### Setup
 
-1. git clone https://github.com/AllAboutAI-YT/easy-local-rag.git
+1. git clone https://github.com/HamzaRadaideh/llamaRag.git
 2. cd dir
 3. pip install -r requirements.txt
 4. Install Ollama (https://ollama.com/download)
@@ -10,22 +10,30 @@
 8. run localrag.py (with query re-write)
 9. run localrag_no_rewrite.py (no query re-write)
 
-### Email RAG Setup
+# Abstract
 
-1. git clone https://github.com/HamzaRadaideh/llamaRag
-2. cd dir
-3. pip install -r requirements.txt
-4. Install Ollama (https://ollama.com/download)
-5. ollama pull llama3 (etc)
-6. ollama pull mxbai-embed-large
-7. set YOUR email logins in .env (for gmail create app password (video))
-8. python collect_emails.py to download your emails
-9. python emailrag2.py to talk to your emails
+This project explores integrating Retrieval-Augmented Generation (RAG) and vector search to enhance large language models (LLMs) like GPT-4 and LLaMA 3. These technologies address limitations in traditional LLMs, such as outdated information and lack of source transparency. We demonstrate these concepts through a Python-based code analysis project, utilizing tools like LLaMA 3 and Ollama, deployed via scalable infrastructure.
 
-### What is RAG?
+# Fine-Tuning
 
-RAG is a way to enhance the capabilities of LLMs by combining their powerful language understanding with targeted retrieval of relevant information from external sources often with using embeddings in vector databases, leading to more accurate, trustworthy, and versatile AI-powered applications
+The process of taking a pre-trained model and adapting it to a specific task by training it further on a smaller, task-specific dataset. This technique allows the model to achieve better performance on the target task while leveraging the knowledge it has already acquired.
 
-### What is Ollama?
+# RAG (Retrieval Augmented Generation)
 
-Ollama is an open-source platform that simplifies the process of running powerful LLMs locally on your own machine, giving users more control and flexibility in their AI projects. https://www.ollama.com
+RAG connects LLMs to real-time data stores, allowing retrieval of specific, up-to-date data to generate more accurate and trustworthy responses. This approach mitigates the limitations of traditional LLMs, which rely on static training data and lack source transparency.
+
+* Problems with Current LLMs:
+Traditional LLMs, such as GPT-4, are constrained by static training data, leading to outdated responses and lack of source citation, which hampers verification and accuracy.
+* How RAG Works:
+RAG involves connecting an LLM to a real-time data store. Queries are processed by retrieving relevant, current data, which is then integrated into the LLM's response generation, ensuring answers are accurate and verifiable.
+
+# Graduation Project
+
+# COMPS Team 💻
+
+# Github team members
+
+* Hamza Radaideh: <https://github.com/HamzaRadaideh>
+* Ahmad Elwan: <https://github.com/AhmadElwan>
+* Mohammad Subeihi: <https://github.com/mosubehi>
+* Khaled Samara: <https://github.com/Khaled3303>
