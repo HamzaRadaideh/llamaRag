@@ -48,6 +48,15 @@ This project implements a chat application using Python's tkinter for the GUI an
 
 Contributions are welcome! If you find issues or want to enhance features, please fork the repository and submit pull requests.
 
+## Graduation Project Team
+
+*COMPS 💻* Github of team members:
+
+- Ahmad Elwan: <https://github.com/AhmadElwan>
+- Hamza Radaideh: <https://github.com/HamzaRadaideh>
+- Mohammad Subehi: <https://github.com/mosubehi>
+- Khaled Samara: <https://github.com/Khaled270>
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
