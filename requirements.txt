@@ -6,3 +6,8 @@ pyyaml
 beautifulsoup4
 lxml
 python-dotenv
+
+#pip install pyPDF2
+# pip install numpy==1.23.5
+#python.exe -m pip install --upgrade pip
+# pip install -r requirements.txt

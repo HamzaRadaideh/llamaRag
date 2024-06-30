@@ -1,39 +1,53 @@
-# Abstract
+# Chat Application with Enhanced Capabilities
 
-This project explores integrating Retrieval-Augmented Generation (RAG) and vector search to enhance large language models (LLMs) like GPT-4 and LLaMA 3. These technologies address limitations in traditional LLMs, such as outdated information and lack of source transparency. We demonstrate these concepts through a Python-based code analysis project, utilizing tools like LLaMA 3 and Ollama, deployed via scalable infrastructure.
+## Overview
 
-## Setup
+This project implements a chat application using Python's tkinter for the GUI and integrates with Ollama for natural language processing capabilities. It allows users to interact via text input and receive responses enriched by context from a vault of documents.
 
-1. git clone <https://github.com/HamzaRadaideh/llamaRag.git>
-2. cd dir
-3. pip install -r requirements.txt
-4. Install Ollama (<https://ollama.com/download>)
-5. ollama pull llama3 (etc)
-6. ollama pull mxbai-embed-large
-7. run upload.py (pdf, .txt, JSON)
-8. run localrag.py (with query re-write)
-9. run localrag_no_rewrite.py (no query re-write)
+## Features
 
-## Fine-Tuning
+- **User Interface**: Built with tkinter, providing a simple GUI for user interaction.
+- **Integration with Ollama**: Utilizes Ollama for generating responses based on input and context from a document vault.
+- **Document Vault**: Supports uploading and processing of PDF, text, and JSON files to build a vault of contextually relevant documents.
+- **Conversation Logging**: Logs user interactions and system responses for future reference.
+- **Query Rewriting**: Enhances user queries by rewriting them based on conversation history and relevant context.
 
-The process of taking a pre-trained model and adapting it to a specific task by training it further on a smaller, task-specific dataset. This technique allows the model to achieve better performance on the target task while leveraging the knowledge it has already acquired.
+## Installation
 
-## RAG (Retrieval Augmented Generation)
+1. Clone the repository:
 
-RAG connects LLMs to real-time data stores, allowing retrieval of specific, up-to-date data to generate more accurate and trustworthy responses. This approach mitigates the limitations of traditional LLMs, which rely on static training data and lack source transparency.
+   ```bash
+   git clone https://github.com/HamzaRadaideh/llamaRag
+   ```
 
-* Problems with Current LLMs:
-Traditional LLMs, such as GPT-4, are constrained by static training data, leading to outdated responses and lack of source citation, which hampers verification and accuracy.
-* How RAG Works:
-RAG involves connecting an LLM to a real-time data store. Queries are processed by retrieving relevant, current data, which is then integrated into the LLM's response generation, ensuring answers are accurate and verifiable.
+2. Ollama Configuration: Set up Ollama API by installing and configuring its requirements.
 
-## Graduation Project
+    - (<https://ollama.com/download>)
+    - ollama run llama3
+    - ollama pull mxbai-embed-large
 
-## COMPS Team 💻
+3. Dependencies: Ensure Python 3.x is installed. Install required Python packages.
 
-## Github team members
+    ```python
+    pip install -r requirements.txt
+    ```
 
-* Hamza Radaideh: <https://github.com/HamzaRadaideh>
-* Ahmad Elwan: <https://github.com/AhmadElwan>
-* Mohammad Subeihi: <https://github.com/mosubehi>
-* Khaled Samara: <https://github.com/Khaled3303>
+4. Running the Application:
+
+    ```python
+    python main.py
+    ```
+
+## Usage
+
+- **Uploading Files**: Use the file upload interface (`Upload PDF`, `Upload Text File`, `Upload JSON File`) to add documents to the vault.
+- **Chat Interface**: Enter queries in the chat interface to interact with the application and receive responses.
+- **Exiting**: Type "exit" to close the application.
+
+## Contributions
+
+Contributions are welcome! If you find issues or want to enhance features, please fork the repository and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
